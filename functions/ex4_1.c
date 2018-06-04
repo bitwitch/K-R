@@ -7,7 +7,6 @@ int main()
 {
     char str1[] = "Tabithabitha";
     char str2[] = "bit";
-
     int index = strrindex(str1, str2);
 
     if (index == -1) 
@@ -20,10 +19,8 @@ int main()
 
 int strrindex(char s[], char t[])
 {
-    int c1 = 0;
-    int c2 = 0;
+    int c1, c2, i;
     int index = -1;
-    int i = 0; 
 
     for (i=0; s[i] != '\0'; i++)
     {
