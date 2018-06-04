@@ -29,14 +29,10 @@ int strrindex(char s[], char t[])
     {
         if (s[i] == t[0])
         {
-            c1 = i;
-            c2 = 0; 
-            while (s[c1++] == t[c2++])
-                 ;
+            for (c1=i, c2=0; s[c1] == t[c2]; c1++, c2++)
+                ;
             if (t[c2] == '\0')
-            {
                 index = i;
-            }
         }
     }
 
